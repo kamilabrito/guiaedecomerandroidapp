@@ -1,14 +1,13 @@
 package com.kbrtz.guiaedecomer.guiaedecomer.model;
 
-import java.util.Date;
-
 /**
  * Created by kamila.brito on 07/06/2016.
  */
 public class WorkingHours {
 
     private int id;
-    private String hours;
+    private String start_hour;
+    private String finish_hour;
     private String week_day;
 
     public String getWeek_day() {
@@ -19,12 +18,12 @@ public class WorkingHours {
         this.week_day = week_day;
     }
 
-    public String getHours() {
-        return hours;
+    public String getStart_hour() {
+        return start_hour;
     }
 
-    public void setHours(String hours) {
-        this.hours = hours;
+    public void setStart_hour(String start_hour) {
+        this.start_hour = start_hour;
     }
 
     public int getId() {
@@ -33,5 +32,13 @@ public class WorkingHours {
 
     public void setId(int id) {
         this.id = id;
+    }
+
+    public String getFinish_hour() {
+        return finish_hour;
+    }
+
+    public void setFinish_hour(String finish_hour) {
+        this.finish_hour = finish_hour;
     }
 }
